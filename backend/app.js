@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initExpensePage();
   initUpcomingPage();
   initBioPage();
+  initChat();
+
+  // Show unread badge briefly on load to draw attention
+  setTimeout(() => {
+    const badge = document.getElementById('chatBadge');
+    if (badge) {
+      badge.classList.add('show');
+      setTimeout(() => badge.classList.remove('show'), 4000);
+    }
+  }, 2000);
 });
 
 // =====================================================
