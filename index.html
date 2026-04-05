@@ -31,49 +31,37 @@
     <div class="container">
 
       <div class="page-header">
-        <h1 class="page-title">💸 Expense Tracker</h1>
-        <p class="page-subtitle">Tracking Sarah & Alex's spending — Oct 2025 to Mar 2026</p>
+        <h1 class="page-title" id="expPageTitle">💸 Expense Tracker</h1>
+        <p class="page-subtitle" id="expPageSubtitle">Tracking Sarah & Alex's combined spending — Oct 2025 to Mar 2026</p>
       </div>
 
-      <!-- Summary Cards -->
-      <div class="summary-grid">
-        <div class="summary-card orange">
-          <span class="summary-icon">💸</span>
-          <span class="summary-label">Total Outflow</span>
-          <span class="summary-value" id="totalAmount">—</span>
-          <span class="summary-sub" id="txCount">— transactions</span>
-        </div>
-        <div class="summary-card blue">
-          <span class="summary-icon">🛒</span>
-          <span class="summary-label">Total Spending</span>
-          <span class="summary-value" id="spendAmount">—</span>
-          <span class="summary-sub">Excl. savings</span>
-        </div>
-        <div class="summary-card green">
-          <span class="summary-icon">🏦</span>
-          <span class="summary-label">Total Savings</span>
-          <span class="summary-value" id="savingsAmount">—</span>
-          <span class="summary-sub">Emergency fund</span>
-        </div>
-        <div class="summary-card pink">
-          <span class="summary-icon">🏆</span>
-          <span class="summary-label">Top Category</span>
-          <span class="summary-value" style="font-size:1.1rem;" id="topCategory">—</span>
-          <span class="summary-sub">Highest spending</span>
-        </div>
-        <div class="summary-card pink">
-          <span class="summary-icon">👩</span>
-          <span class="summary-label">Sarah's Total</span>
-          <span class="summary-value" style="font-size:1.2rem;" id="sarahAmount">—</span>
-          <span class="summary-sub">All transactions</span>
-        </div>
-        <div class="summary-card purple">
-          <span class="summary-icon">👨</span>
-          <span class="summary-label">Alex's Total</span>
-          <span class="summary-value" style="font-size:1.2rem;" id="alexAmount">—</span>
-          <span class="summary-sub">All transactions</span>
-        </div>
+      <!-- ===== LAYOUT SWITCHER ===== -->
+      <div class="layout-switcher">
+        <button class="layout-btn active" data-layout="group">
+          <span class="layout-btn-icon">👥</span>
+          <div class="layout-btn-text">
+            <span class="layout-btn-name">Group View</span>
+            <span class="layout-btn-desc">Combined expenses</span>
+          </div>
+        </button>
+        <button class="layout-btn" data-layout="sarah">
+          <span class="layout-btn-icon">👩</span>
+          <div class="layout-btn-text">
+            <span class="layout-btn-name">Sarah's View</span>
+            <span class="layout-btn-desc">Her universe ✨</span>
+          </div>
+        </button>
+        <button class="layout-btn" data-layout="alex">
+          <span class="layout-btn-icon">👨</span>
+          <div class="layout-btn-text">
+            <span class="layout-btn-name">Alex's View</span>
+            <span class="layout-btn-desc">His dashboard 💎</span>
+          </div>
+        </button>
       </div>
+
+      <!-- Summary Cards — rendered dynamically by JS -->
+      <div class="summary-grid" id="summaryGrid"></div>
 
       <!-- ===== CHARTS ROW 1: Calendar + Upcoming Stats ===== -->
       <div class="charts-grid">
