@@ -251,6 +251,43 @@
     </div>
   </section>
 
+  <!-- ==================== FLOATING AI CHAT ==================== -->
+
+  <!-- Floating button -->
+  <button class="chat-float-btn" id="chatFloatBtn" aria-label="Open Finance Assistant">
+    <span class="chat-btn-icon">💬</span>
+    <span class="chat-badge" id="chatBadge">1</span>
+  </button>
+
+  <!-- Chat panel -->
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Finance Assistant Chat">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="chat-header-avatar">🌸</div>
+      <div class="chat-header-info">
+        <div class="chat-header-name">FinanceBot 🌸</div>
+        <div class="chat-header-status">Online — data loaded</div>
+      </div>
+      <button class="chat-close-btn" id="chatCloseBtn" aria-label="Close chat">✕</button>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <!-- Input -->
+    <div class="chat-input-area">
+      <textarea
+        class="chat-input"
+        id="chatInput"
+        placeholder="Ask me about expenses, payments..."
+        rows="1"
+      ></textarea>
+      <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message">➤</button>
+    </div>
+
+  </div>
+
   <!-- ===== Database layer ===== -->
   <script src="database/expenses-data.js"></script>
   <script src="database/upcoming-data.js"></script>
@@ -260,6 +297,7 @@
   <script src="backend/expenses.js"></script>
   <script src="backend/upcoming.js"></script>
   <script src="backend/biodata.js"></script>
+  <script src="backend/chat.js"></script>
   <script src="backend/app.js"></script>
 
 </body>
