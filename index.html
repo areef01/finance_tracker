@@ -4,13 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Finance Tracker 🌸 — Sarah & Alex</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Chart.js CDN -->
+  <link rel="stylesheet" href="frontend/css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
 
-  <!-- Decorative background circles -->
   <div class="deco-circle deco-circle-1"></div>
   <div class="deco-circle deco-circle-2"></div>
 
@@ -22,16 +20,8 @@
         <span>FinanceTrack</span>
       </a>
       <ul class="nav-tabs">
-        <li>
-          <button class="nav-tab-btn active" data-page="page-expenses">
-            💰 Expenses <span class="nav-badge">Tracker</span>
-          </button>
-        </li>
-        <li>
-          <button class="nav-tab-btn" data-page="page-biodata">
-            👥 Biodata <span class="nav-badge">2 People</span>
-          </button>
-        </li>
+        <li><button class="nav-tab-btn active" data-page="page-expenses">💰 Expenses <span class="nav-badge">Tracker</span></button></li>
+        <li><button class="nav-tab-btn" data-page="page-biodata">👥 Biodata <span class="nav-badge">2 People</span></button></li>
       </ul>
     </div>
   </nav>
@@ -40,7 +30,6 @@
   <section id="page-expenses" class="page active">
     <div class="container">
 
-      <!-- Header -->
       <div class="page-header">
         <h1 class="page-title">💸 Expense Tracker</h1>
         <p class="page-subtitle">Tracking Sarah & Alex's spending — Oct 2025 to Mar 2026</p>
@@ -86,19 +75,103 @@
         </div>
       </div>
 
-      <!-- Charts -->
+      <!-- ===== CHARTS ROW 1: Calendar + Upcoming Stats ===== -->
       <div class="charts-grid">
-        <!-- Monthly Bar Chart -->
+
+        <!-- [1] Calendar — Upcoming Payments -->
         <div class="chart-card">
           <div class="chart-header">
-            <span class="chart-title">📅 Monthly Overview</span>
+            <span class="chart-title">📅 Upcoming Payments</span>
+            <div class="cal-nav">
+              <button class="cal-nav-btn" id="calPrev">‹</button>
+              <span class="cal-month-label" id="calMonthLabel">April 2026</span>
+              <button class="cal-nav-btn" id="calNext">›</button>
+            </div>
+          </div>
+
+          <div class="calendar-wrapper">
+            <div class="cal-grid" id="calGrid"><!-- rendered by JS --></div>
+
+            <!-- Alarm list -->
+            <div class="alarm-list-wrapper">
+              <div class="alarm-list-title">🚨 Due within 5 days</div>
+              <div id="alarmList"><!-- rendered by JS --></div>
+            </div>
+
+            <!-- Legend -->
+            <div class="cal-legend">
+              <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#2d7a52;opacity:0.5;"></span> Paid</div>
+              <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#b02828;opacity:0.6;"></span> Alarm (≤5 days)</div>
+              <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#9a6010;opacity:0.5;"></span> Soon (≤14 days)</div>
+              <div class="cal-legend-item"><span class="cal-legend-dot" style="background:#7a5540;opacity:0.4;"></span> Upcoming</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- [2] Upcoming Stats Panel -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">📊 Payment Summary</span>
+          </div>
+          <div class="upcoming-stats-wrapper">
+
+            <!-- Total upcoming -->
+            <div class="up-stat-row">
+              <span class="up-stat-section-label">💰 <span id="upTotalLabel">Total Upcoming</span></span>
+              <div class="up-big-number" id="upTotalAmount">—</div>
+              <div class="up-sub-text" id="upTotalCount">— payments scheduled</div>
+            </div>
+
+            <div class="up-divider"></div>
+
+            <!-- Installments -->
+            <div class="up-stat-row">
+              <span class="up-stat-section-label">⚙️ Installments Left (Pending)</span>
+              <div class="up-big-number" id="upInstAmount">—</div>
+              <div class="up-sub-text" id="upInstCount">— active installment plans</div>
+            </div>
+
+            <div class="up-divider"></div>
+
+            <!-- Completion % -->
+            <div class="up-stat-row">
+              <span class="up-stat-section-label">✅ Completion Rate</span>
+              <div class="up-pct-row">
+                <span class="up-pct-num" id="upPctValue">0%</span>
+                <span class="up-pct-detail" id="upPctDetail">0 paid · 0 pending</span>
+              </div>
+              <div class="up-progress-track">
+                <div class="up-progress-fill" id="upPctBar" style="width:0%"></div>
+              </div>
+            </div>
+
+            <div class="up-divider"></div>
+
+            <!-- Alarm -->
+            <div class="up-alarm-section" id="upAlarmSection">
+              <div class="up-alarm-count" id="upAlarmCount">0</div>
+              <div class="up-alarm-desc" id="upAlarmLabel">✅ All clear — no urgent payments!</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- end charts-grid row 1 -->
+
+      <!-- ===== CHARTS ROW 2: Monthly Overview + Category Donut ===== -->
+      <div class="charts-grid">
+
+        <!-- [3] Monthly Overview -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">📈 Monthly Overview</span>
           </div>
           <div class="chart-container">
             <canvas id="monthlyChart"></canvas>
           </div>
         </div>
 
-        <!-- Category Donut -->
+        <!-- [4] Spending by Category -->
         <div class="chart-card">
           <div class="chart-header">
             <span class="chart-title">🥧 Spending by Category</span>
@@ -108,26 +181,7 @@
           </div>
         </div>
 
-        <!-- Person Pie -->
-        <div class="chart-card">
-          <div class="chart-header">
-            <span class="chart-title">👥 Spending by Person</span>
-          </div>
-          <div class="chart-container" style="height:220px;">
-            <canvas id="personChart"></canvas>
-          </div>
-        </div>
-
-        <!-- Category Colors Legend -->
-        <div class="chart-card">
-          <div class="chart-header">
-            <span class="chart-title">🏷️ Category Guide</span>
-          </div>
-          <div class="category-legend" id="categoryLegend">
-            <!-- Rendered by JS -->
-          </div>
-        </div>
-      </div>
+      </div><!-- end charts-grid row 2 -->
 
       <!-- Filter Bar -->
       <div class="filter-bar">
@@ -167,9 +221,7 @@
                 <th>Payment</th>
               </tr>
             </thead>
-            <tbody id="expenseTableBody">
-              <!-- Rendered by JS -->
-            </tbody>
+            <tbody id="expenseTableBody"></tbody>
           </table>
         </div>
       </div>
@@ -181,52 +233,34 @@
   <section id="page-biodata" class="page">
     <div class="container">
 
-      <!-- Header -->
       <div class="page-header bio-intro">
         <h1 class="page-title">👥 Meet the Duo</h1>
         <p class="bio-intro-text">
           Get to know Sarah & Alex — the brains (and hearts 💕) behind this tracker!
-          Click their card to reveal their full biodata ✨
+          Click their card to reveal the full biodata ✨
         </p>
       </div>
 
-      <!-- Flip Cards -->
-      <div class="bio-cards-grid" id="bioCardsGrid">
-        <!-- Rendered by JS -->
-      </div>
+      <div class="bio-cards-grid" id="bioCardsGrid"></div>
 
-      <!-- Stats Section -->
       <div class="bio-stats-section">
-        <div class="bio-stats-title">
-          📊 Combined Spending Stats (6 Months)
-        </div>
-        <div class="bio-stats-grid" id="bioStatsGrid">
-          <!-- Rendered by JS -->
-        </div>
+        <div class="bio-stats-title">📊 Combined Spending Stats (6 Months)</div>
+        <div class="bio-stats-grid" id="bioStatsGrid"></div>
       </div>
 
     </div>
   </section>
 
-  <!-- Scripts -->
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
+  <!-- ===== Database layer ===== -->
+  <script src="database/expenses-data.js"></script>
+  <script src="database/upcoming-data.js"></script>
+  <script src="database/biodata-data.js"></script>
 
-  <!-- Render category legend after everything loads -->
-  <script>
-    window.addEventListener('load', () => {
-      const legend = document.getElementById('categoryLegend');
-      if (!legend) return;
-      Object.entries(CATEGORY_CONFIG).forEach(([name, cfg]) => {
-        legend.insertAdjacentHTML('beforeend', `
-          <div class="legend-item">
-            <span class="legend-dot" style="background:${cfg.color};"></span>
-            ${cfg.icon} ${name}
-          </div>
-        `);
-      });
-    });
-  </script>
+  <!-- ===== Backend layer ===== -->
+  <script src="backend/expenses.js"></script>
+  <script src="backend/upcoming.js"></script>
+  <script src="backend/biodata.js"></script>
+  <script src="backend/app.js"></script>
 
 </body>
 </html>
