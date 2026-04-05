@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Tracker 🌸 — Sarah & Alex</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Decorative background circles -->
+  <div class="deco-circle deco-circle-1"></div>
+  <div class="deco-circle deco-circle-2"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">
+        <span class="logo-icon">🌸</span>
+        <span>FinanceTrack</span>
+      </a>
+      <ul class="nav-tabs">
+        <li>
+          <button class="nav-tab-btn active" data-page="page-expenses">
+            💰 Expenses <span class="nav-badge">Tracker</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-tab-btn" data-page="page-biodata">
+            👥 Biodata <span class="nav-badge">2 People</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE 1: EXPENSES ==================== -->
+  <section id="page-expenses" class="page active">
+    <div class="container">
+
+      <!-- Header -->
+      <div class="page-header">
+        <h1 class="page-title">💸 Expense Tracker</h1>
+        <p class="page-subtitle">Tracking Sarah & Alex's spending — Oct 2025 to Mar 2026</p>
+      </div>
+
+      <!-- Summary Cards -->
+      <div class="summary-grid">
+        <div class="summary-card orange">
+          <span class="summary-icon">💸</span>
+          <span class="summary-label">Total Outflow</span>
+          <span class="summary-value" id="totalAmount">—</span>
+          <span class="summary-sub" id="txCount">— transactions</span>
+        </div>
+        <div class="summary-card blue">
+          <span class="summary-icon">🛒</span>
+          <span class="summary-label">Total Spending</span>
+          <span class="summary-value" id="spendAmount">—</span>
+          <span class="summary-sub">Excl. savings</span>
+        </div>
+        <div class="summary-card green">
+          <span class="summary-icon">🏦</span>
+          <span class="summary-label">Total Savings</span>
+          <span class="summary-value" id="savingsAmount">—</span>
+          <span class="summary-sub">Emergency fund</span>
+        </div>
+        <div class="summary-card pink">
+          <span class="summary-icon">🏆</span>
+          <span class="summary-label">Top Category</span>
+          <span class="summary-value" style="font-size:1.1rem;" id="topCategory">—</span>
+          <span class="summary-sub">Highest spending</span>
+        </div>
+        <div class="summary-card pink">
+          <span class="summary-icon">👩</span>
+          <span class="summary-label">Sarah's Total</span>
+          <span class="summary-value" style="font-size:1.2rem;" id="sarahAmount">—</span>
+          <span class="summary-sub">All transactions</span>
+        </div>
+        <div class="summary-card purple">
+          <span class="summary-icon">👨</span>
+          <span class="summary-label">Alex's Total</span>
+          <span class="summary-value" style="font-size:1.2rem;" id="alexAmount">—</span>
+          <span class="summary-sub">All transactions</span>
+        </div>
+      </div>
+
+      <!-- Charts -->
+      <div class="charts-grid">
+        <!-- Monthly Bar Chart -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">📅 Monthly Overview</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="monthlyChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Category Donut -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">🥧 Spending by Category</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="categoryChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Person Pie -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">👥 Spending by Person</span>
+          </div>
+          <div class="chart-container" style="height:220px;">
+            <canvas id="personChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Category Colors Legend -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">🏷️ Category Guide</span>
+          </div>
+          <div class="category-legend" id="categoryLegend">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <span class="filter-label">🔍 Filter</span>
+        <select class="filter-select" id="filterMonth">
+          <option value="">All Months</option>
+        </select>
+        <select class="filter-select" id="filterCategory">
+          <option value="">All Categories</option>
+        </select>
+        <select class="filter-select" id="filterPerson">
+          <option value="">All People</option>
+          <option value="Sarah">👩 Sarah</option>
+          <option value="Alex">👨 Alex</option>
+        </select>
+        <button class="btn btn-primary" id="downloadBtn" style="margin-left:auto;">
+          ⬇️ Download CSV
+        </button>
+      </div>
+
+      <!-- Transactions Table -->
+      <div class="table-card">
+        <div class="table-header">
+          <span class="table-title">📋 All Transactions</span>
+          <span class="table-count" id="tableCount"></span>
+        </div>
+        <div class="table-scroll">
+          <table class="expense-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Sub</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Person</th>
+                <th>Payment</th>
+              </tr>
+            </thead>
+            <tbody id="expenseTableBody">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PAGE 2: BIODATA ==================== -->
+  <section id="page-biodata" class="page">
+    <div class="container">
+
+      <!-- Header -->
+      <div class="page-header bio-intro">
+        <h1 class="page-title">👥 Meet the Duo</h1>
+        <p class="bio-intro-text">
+          Get to know Sarah & Alex — the brains (and hearts 💕) behind this tracker!
+          Click their card to reveal their full biodata ✨
+        </p>
+      </div>
+
+      <!-- Flip Cards -->
+      <div class="bio-cards-grid" id="bioCardsGrid">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Stats Section -->
+      <div class="bio-stats-section">
+        <div class="bio-stats-title">
+          📊 Combined Spending Stats (6 Months)
+        </div>
+        <div class="bio-stats-grid" id="bioStatsGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Render category legend after everything loads -->
+  <script>
+    window.addEventListener('load', () => {
+      const legend = document.getElementById('categoryLegend');
+      if (!legend) return;
+      Object.entries(CATEGORY_CONFIG).forEach(([name, cfg]) => {
+        legend.insertAdjacentHTML('beforeend', `
+          <div class="legend-item">
+            <span class="legend-dot" style="background:${cfg.color};"></span>
+            ${cfg.icon} ${name}
+          </div>
+        `);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+Date,Category,Subcategory,Description,Amount (RM),Person,Payment Method,Month
+2025-10-01,Food & Dining,Breakfast,Nasi Lemak at Warung Mak Cik,5.50,Sarah,Cash,Oct 2025
+2025-10-02,Transportation,Fuel,Petrol at Shell Station,80.00,Alex,Credit Card,Oct 2025
+2025-10-03,Food & Dining,Lunch,Lunch at Mamak,12.50,Sarah,Cash,Oct 2025
+2025-10-04,Shopping & Clothing,Clothing,H&M Summer Collection,189.90,Sarah,Credit Card,Oct 2025
+2025-10-05,Utilities,Internet,Unifi Monthly Subscription,89.00,Alex,Auto Debit,Oct 2025
+2025-10-06,Entertainment,Movies,Cinema Tickets x2,38.00,Alex,E-Wallet,Oct 2025
+2025-10-07,Food & Dining,Groceries,Weekly Groceries at Jaya Grocer,156.40,Sarah,E-Wallet,Oct 2025
+2025-10-08,Healthcare,Pharmacy,Cold Medicine at Guardian,45.60,Sarah,Cash,Oct 2025
+2025-10-09,Transportation,Grab,Grab to KLCC,22.00,Alex,E-Wallet,Oct 2025
+2025-10-10,Subscriptions,Streaming,Netflix Monthly,55.00,Alex,Credit Card,Oct 2025
+2025-10-11,Food & Dining,Dinner,Dinner at Chilis,98.70,Sarah,Credit Card,Oct 2025
+2025-10-12,Personal Care,Haircare,Shampoo & Conditioner,67.80,Sarah,Cash,Oct 2025
+2025-10-13,Education,Books,Programming Book,75.00,Alex,Online Transfer,Oct 2025
+2025-10-14,Housing,Utilities,Electricity Bill,220.50,Alex,Online Transfer,Oct 2025
+2025-10-15,Food & Dining,Snacks,Boba Tea & Snacks,28.00,Sarah,E-Wallet,Oct 2025
+2025-10-16,Travel,Parking,Monthly Parking Fee,150.00,Alex,Cash,Oct 2025
+2025-10-17,Home & Garden,Cleaning,Cleaning Supplies,43.20,Sarah,Cash,Oct 2025
+2025-10-18,Gifts & Donations,Gift,Birthday Gift for Friend,120.00,Sarah,Credit Card,Oct 2025
+2025-10-19,Food & Dining,Breakfast,McDonalds Breakfast,18.50,Alex,E-Wallet,Oct 2025
+2025-10-20,Transportation,Toll,Touch n Go Reload,50.00,Alex,E-Wallet,Oct 2025
+2025-10-21,Subscriptions,Music,Spotify Premium,17.00,Sarah,Credit Card,Oct 2025
+2025-10-22,Healthcare,Dental,Dental Check-up,180.00,Alex,Credit Card,Oct 2025
+2025-10-23,Food & Dining,Lunch,Korean BBQ Lunch,85.00,Sarah,Credit Card,Oct 2025
+2025-10-24,Personal Care,Skincare,SK-II Toner,299.00,Sarah,Credit Card,Oct 2025
+2025-10-25,Savings,Emergency Fund,Monthly Savings Transfer,500.00,Alex,Bank Transfer,Oct 2025
+2025-10-26,Food & Dining,Dinner,Steamboat with Family,210.00,Alex,Credit Card,Oct 2025
+2025-10-27,Shopping & Clothing,Electronics,Phone Case & Screen Protector,65.00,Alex,E-Wallet,Oct 2025
+2025-10-28,Pet Care,Food,Cat Food (2 bags),89.00,Sarah,E-Wallet,Oct 2025
+2025-10-29,Utilities,Water,Water Bill,35.80,Alex,Online Transfer,Oct 2025
+2025-10-30,Entertainment,Games,Steam Game Purchase,59.00,Alex,Credit Card,Oct 2025
+2025-10-31,Food & Dining,Groceries,Monthly Stock-up at AEON,287.60,Sarah,Credit Card,Oct 2025
+2025-11-01,Food & Dining,Breakfast,Roti Canai & Teh Tarik,7.50,Alex,Cash,Nov 2025
+2025-11-02,Transportation,Fuel,Petrol at BHPetrol,75.00,Alex,Credit Card,Nov 2025
+2025-11-03,Healthcare,Clinic,Doctor Visit (Fever),80.00,Sarah,Cash,Nov 2025
+2025-11-04,Food & Dining,Lunch,Sushi Lunch at Sushi King,95.00,Sarah,Credit Card,Nov 2025
+2025-11-05,Utilities,Internet,Unifi Monthly Subscription,89.00,Alex,Auto Debit,Nov 2025
+2025-11-06,Shopping & Clothing,Clothing,Uniqlo Hoodie,199.00,Alex,Credit Card,Nov 2025
+2025-11-07,Entertainment,Karaoke,Karaoke Night,75.00,Sarah,Cash,Nov 2025
+2025-11-08,Food & Dining,Groceries,Pasar Malam Shopping,88.50,Sarah,Cash,Nov 2025
+2025-11-09,Transportation,Grab,Grab to Airport,55.00,Alex,E-Wallet,Nov 2025
+2025-11-10,Subscriptions,Streaming,Netflix Monthly,55.00,Alex,Credit Card,Nov 2025
+2025-11-11,Education,Online Course,Udemy Course (Discount),45.99,Alex,Credit Card,Nov 2025
+2025-11-12,Food & Dining,Dinner,Pizza Night,65.00,Sarah,E-Wallet,Nov 2025
+2025-11-13,Personal Care,Grooming,Haircut at Saloon,50.00,Alex,Cash,Nov 2025
+2025-11-14,Housing,Utilities,Electricity Bill,198.30,Alex,Online Transfer,Nov 2025
+2025-11-15,Travel,Trip,Weekend Trip to Penang (Hotel),380.00,Sarah,Credit Card,Nov 2025
+2025-11-16,Travel,Trip,Penang Food Trail,145.00,Sarah,Cash,Nov 2025
+2025-11-17,Home & Garden,Furniture,Small Shelf from IKEA,159.00,Sarah,Credit Card,Nov 2025
+2025-11-18,Food & Dining,Breakfast,Old Town White Coffee,22.00,Alex,E-Wallet,Nov 2025
+2025-11-19,Transportation,Toll,Touch n Go Reload,100.00,Alex,E-Wallet,Nov 2025
+2025-11-20,Subscriptions,Music,Spotify Premium,17.00,Sarah,Credit Card,Nov 2025
+2025-11-21,Gifts & Donations,Donation,Charity Donation,50.00,Sarah,Online Transfer,Nov 2025
+2025-11-22,Food & Dining,Lunch,Thai Food Lunch,42.00,Alex,Cash,Nov 2025
+2025-11-23,Pet Care,Vet,Cat Vaccination,150.00,Sarah,Credit Card,Nov 2025
+2025-11-24,Savings,Emergency Fund,Monthly Savings Transfer,500.00,Alex,Bank Transfer,Nov 2025
+2025-11-25,Shopping & Clothing,Accessories,Sunglasses,179.00,Sarah,Credit Card,Nov 2025
+2025-11-26,Food & Dining,Dinner,Family Dinner (Ramadan Prep),320.00,Alex,Credit Card,Nov 2025
+2025-11-27,Healthcare,Pharmacy,Vitamins & Supplements,88.00,Alex,Cash,Nov 2025
+2025-11-28,Entertainment,Theme Park,Sunway Lagoon Tickets,180.00,Sarah,Credit Card,Nov 2025
+2025-11-29,Utilities,Water,Water Bill,38.20,Alex,Online Transfer,Nov 2025
+2025-11-30,Food & Dining,Groceries,Monthly Stock-up at Lotus,310.80,Sarah,Credit Card,Nov 2025
+2025-12-01,Food & Dining,Breakfast,Dim Sum Sunday,65.00,Sarah,Cash,Dec 2025
+2025-12-02,Transportation,Fuel,Petrol at Petronas,85.00,Alex,Credit Card,Dec 2025
+2025-12-03,Shopping & Clothing,Christmas Sale,Year End Sale at Pavilion,550.00,Sarah,Credit Card,Dec 2025
+2025-12-04,Entertainment,Movies,Avatar Sequel Cinema,45.00,Alex,E-Wallet,Dec 2025
+2025-12-05,Utilities,Internet,Unifi Monthly Subscription,89.00,Alex,Auto Debit,Dec 2025
+2025-12-06,Food & Dining,Lunch,Christmas Lunch,125.00,Sarah,Credit Card,Dec 2025
+2025-12-07,Gifts & Donations,Gifts,Christmas Gifts,450.00,Sarah,Credit Card,Dec 2025
+2025-12-08,Food & Dining,Groceries,Christmas Week Groceries,220.00,Sarah,E-Wallet,Dec 2025
+2025-12-09,Healthcare,Clinic,Annual Health Check-up,350.00,Alex,Credit Card,Dec 2025
+2025-12-10,Subscriptions,Streaming,Netflix Monthly,55.00,Alex,Credit Card,Dec 2025
+2025-12-11,Travel,Trip,Christmas Trip to Langkawi,1200.00,Alex,Credit Card,Dec 2025
+2025-12-12,Personal Care,Skincare,Year-end Skincare Haul,420.00,Sarah,Credit Card,Dec 2025
+2025-12-13,Transportation,Grab,Grab during Holiday,88.00,Alex,E-Wallet,Dec 2025
+2025-12-14,Housing,Utilities,Electricity Bill (High Season),285.60,Alex,Online Transfer,Dec 2025
+2025-12-15,Education,Books,New Year Planner & Journals,55.00,Sarah,E-Wallet,Dec 2025
+2025-12-16,Food & Dining,Dinner,New Year Eve Dinner,320.00,Sarah,Credit Card,Dec 2025
+2025-12-17,Home & Garden,Decoration,Christmas Decorations,189.00,Sarah,Credit Card,Dec 2025
+2025-12-18,Subscriptions,Music,Spotify Premium,17.00,Sarah,Credit Card,Dec 2025
+2025-12-19,Pet Care,Food,Premium Cat Food (Holiday Pack),125.00,Sarah,E-Wallet,Dec 2025
+2025-12-20,Savings,Emergency Fund,Monthly Savings Transfer,500.00,Alex,Bank Transfer,Dec 2025
+2025-12-21,Food & Dining,Groceries,New Year Party Food,178.90,Sarah,Credit Card,Dec 2025
+2025-12-22,Transportation,Toll,Touch n Go Reload,100.00,Alex,E-Wallet,Dec 2025
+2025-12-23,Shopping & Clothing,Electronics,Year End Tech Deals,899.00,Alex,Credit Card,Dec 2025
+2025-12-24,Entertainment,Party,New Year Celebration,250.00,Alex,Credit Card,Dec 2025
+2025-12-25,Food & Dining,Breakfast,Hotel Buffet Breakfast,98.00,Alex,Credit Card,Dec 2025
+2025-12-26,Utilities,Water,Water Bill,40.50,Alex,Online Transfer,Dec 2025
+2025-12-27,Food & Dining,Snacks,Festive Snacks & Cookies,88.50,Sarah,Cash,Dec 2025
+2025-12-28,Personal Care,Haircare,Year-end Haircut & Treatment,180.00,Sarah,Credit Card,Dec 2025
+2025-12-29,Healthcare,Pharmacy,Year-end Medicine Stock,67.00,Alex,Cash,Dec 2025
+2025-12-30,Gifts & Donations,Donation,Year-end Charity,100.00,Sarah,Online Transfer,Dec 2025
+2025-12-31,Food & Dining,Dinner,New Year Countdown Dinner,280.00,Alex,Credit Card,Dec 2025
+2026-01-01,Food & Dining,Breakfast,New Year Brunch,85.00,Sarah,Credit Card,Jan 2026
+2026-01-02,Transportation,Fuel,First Petrol of Year,80.00,Alex,Credit Card,Jan 2026
+2026-01-03,Housing,Utilities,Electricity Bill,210.00,Alex,Online Transfer,Jan 2026
+2026-01-04,Education,Online Course,New Year Learning Goal - Coursera,199.00,Alex,Credit Card,Jan 2026
+2026-01-05,Food & Dining,Groceries,Weekly Groceries,165.40,Sarah,E-Wallet,Jan 2026
+2026-01-06,Subscriptions,Streaming,Netflix Monthly,55.00,Alex,Credit Card,Jan 2026
+2026-01-07,Shopping & Clothing,Clothing,Chinese New Year Outfit,380.00,Sarah,Credit Card,Jan 2026
+2026-01-08,Transportation,Grab,Grab to Office,25.00,Alex,E-Wallet,Jan 2026
+2026-01-09,Food & Dining,Lunch,Lunch with Colleagues,55.00,Alex,Cash,Jan 2026
+2026-01-10,Healthcare,Pharmacy,Regular Supplements,98.00,Alex,Cash,Jan 2026
+2026-01-11,Entertainment,Movies,Movie Night,38.00,Sarah,E-Wallet,Jan 2026
+2026-01-12,Utilities,Internet,Unifi Monthly Subscription,89.00,Alex,Auto Debit,Jan 2026
+2026-01-13,Personal Care,Skincare,Moisturizer & Sunscreen,185.00,Sarah,Credit Card,Jan 2026
+2026-01-14,Food & Dining,Dinner,Restaurant Dinner,120.00,Sarah,Credit Card,Jan 2026
+2026-01-15,Savings,Emergency Fund,Monthly Savings Transfer,500.00,Alex,Bank Transfer,Jan 2026
+2026-01-16,Gifts & Donations,Gift,CNY Angpau Preparation,300.00,Alex,Cash,Jan 2026
+2026-01-17,Transportation,Toll,Touch n Go Reload,80.00,Alex,E-Wallet,Jan 2026
+2026-01-18,Home & Garden,Cleaning,CNY Spring Cleaning Supplies,125.00,Sarah,Cash,Jan 2026
+2026-01-19,Food & Dining,Groceries,CNY Biscuits & Snacks,210.00,Sarah,Credit Card,Jan 2026
+2026-01-20,Pet Care,Accessories,Cat Toys & Accessories,78.00,Sarah,E-Wallet,Jan 2026
+2026-01-21,Subscriptions,Music,Spotify Premium,17.00,Sarah,Credit Card,Jan 2026
+2026-01-22,Entertainment,Theme Park,CNY Family Activity,220.00,Alex,Credit Card,Jan 2026
+2026-01-23,Food & Dining,Reunion Dinner,CNY Reunion Dinner,450.00,Alex,Credit Card,Jan 2026
+2026-01-24,Utilities,Water,Water Bill,33.60,Alex,Online Transfer,Jan 2026
+2026-01-25,Shopping & Clothing,Home Goods,New Year Home Decor,255.00,Sarah,Credit Card,Jan 2026
+2026-01-26,Healthcare,Clinic,Flu Season Check-up,80.00,Sarah,Cash,Jan 2026
+2026-01-27,Food & Dining,Breakfast,CNY Open House Prep,88.00,Sarah,Cash,Jan 2026
+2026-01-28,Travel,Trip,CNY Trip Back to Hometown,320.00,Alex,Credit Card,Jan 2026
+2026-01-29,Education,Books,Investment Books,95.00,Alex,E-Wallet,Jan 2026
+2026-01-30,Personal Care,Grooming,Haircut Before CNY,60.00,Alex,Cash,Jan 2026
+2026-01-31,Food & Dining,Groceries,End of Month Groceries,145.30,Sarah,E-Wallet,Jan 2026
+2026-02-01,Food & Dining,Breakfast,Valentine's Day Brunch Prep,45.00,Sarah,Cash,Feb 2026
+2026-02-02,Transportation,Fuel,Petrol,78.00,Alex,Credit Card,Feb 2026
+2026-02-03,Healthcare,Pharmacy,Allergy Medicine,65.00,Sarah,Cash,Feb 2026
+2026-02-04,Food & Dining,Groceries,Weekly Groceries,172.60,Sarah,E-Wallet,Feb 2026
+2026-02-05,Utilities,Internet,Unifi Monthly Subscription,89.00,Alex,Auto Debit,Feb 2026
+2026-02-06,Shopping & Clothing,Gift,Valentine's Gifts,350.00,Alex,Credit Card,Feb 2026
+2026-02-07,Entertainment,Movies,Valentine's Movie,48.00,Alex,E-Wallet,Feb 2026
+2026-02-08,Food & Dining,Dinner,Valentine's Dinner at Fine Dining,580.00,Alex,Credit Card,Feb 2026
+2026-02-09,Personal Care,Spa,Valentine Couple Spa,480.00,Sarah,Credit Card,Feb 2026
+2026-02-10,Subscriptions,Streaming,Netflix Monthly,55.00,Alex,Credit Card,Feb 2026
+2026-02-11,Education,Online Course,Data Science Course,259.00,Alex,Credit Card,Feb 2026
+2026-02-12,Transportation,Grab,Grab Weekend,35.00,Sarah,E-Wallet,Feb 2026
+2026-02-13,Food & Dining,Lunch,Japanese Lunch,75.00,Sarah,Credit Card,Feb 2026
+2026-02-14,Housing,Utilities,Electricity Bill,195.80,Alex,Online Transfer,Feb 2026
+2026-02-15,Savings,Emergency Fund,Monthly Savings Transfer,500.00,Alex,Bank Transfer,Feb 2026
+2026-02-16,Food & Dining,Snacks,Cafe Hopping,68.00,Sarah,E-Wallet,Feb 2026
+2026-02-17,Transportation,Toll,Touch n Go Reload,80.00,Alex,E-Wallet,Feb 2026
+2026-02-18,Home & Garden,Plant,Indoor Plants,155.00,Sarah,Cash,Feb 2026
+2026-02-19,Subscriptions,Music,Spotify Premium,17.00,Sarah,Credit Card,Feb 2026
+2026-02-20,Pet Care,Food,Cat Food Monthly,89.00,Sarah,E-Wallet,Feb 2026
+2026-02-21,Food & Dining,Groceries,Supermarket Run,198.40,Sarah,Credit Card,Feb 2026
+2026-02-22,Healthcare,Dental,Teeth Whitening,350.00,Sarah,Credit Card,Feb 2026
+2026-02-23,Entertainment,Concert,Concert Tickets,280.00,Sarah,Credit Card,Feb 2026
+2026-02-24,Shopping & Clothing,Electronics,Wireless Earbuds,399.00,Alex,Credit Card,Feb 2026
+2026-02-25,Gifts & Donations,Gift,Friend's Baby Shower Gift,150.00,Sarah,Online Transfer,Feb 2026
+2026-02-26,Utilities,Water,Water Bill,36.40,Alex,Online Transfer,Feb 2026
+2026-02-27,Food & Dining,Breakfast,Weekend Brunch,95.00,Alex,Credit Card,Feb 2026
+2026-02-28,Personal Care,Haircare,Hair Coloring at Salon,280.00,Sarah,Credit Card,Feb 2026
+2026-03-01,Food & Dining,Breakfast,Morning Coffee & Toast,15.00,Alex,Cash,Mar 2026
+2026-03-02,Transportation,Fuel,Petrol,82.00,Alex,Credit Card,Mar 2026
+2026-03-03,Shopping & Clothing,Clothing,New Work Attire,420.00,Alex,Credit Card,Mar 2026
+2026-03-04,Healthcare,Clinic,Medical Check-up,150.00,Alex,Credit Card,Mar 2026
+2026-03-05,Utilities,Internet,Unifi Monthly Subscription,89.00,Alex,Auto Debit,Mar 2026
+2026-03-06,Food & Dining,Groceries,Weekly Groceries at Giant,155.80,Sarah,E-Wallet,Mar 2026
+2026-03-07,Entertainment,Event,Stand-up Comedy Show,120.00,Sarah,Credit Card,Mar 2026
+2026-03-08,Subscriptions,Streaming,Netflix Monthly,55.00,Alex,Credit Card,Mar 2026
+2026-03-09,Personal Care,Skincare,New Skincare Routine Set,365.00,Sarah,Credit Card,Mar 2026
+2026-03-10,Education,Workshop,Marketing Workshop,350.00,Alex,Online Transfer,Mar 2026
+2026-03-11,Food & Dining,Lunch,Lunch with Manager,88.00,Alex,Cash,Mar 2026
+2026-03-12,Transportation,Grab,Grab to Meeting,30.00,Alex,E-Wallet,Mar 2026
+2026-03-13,Housing,Utilities,Electricity Bill,205.00,Alex,Online Transfer,Mar 2026
+2026-03-14,Home & Garden,Appliance,Air Purifier,599.00,Sarah,Credit Card,Mar 2026
+2026-03-15,Savings,Emergency Fund,Monthly Savings Transfer,500.00,Alex,Bank Transfer,Mar 2026
+2026-03-16,Food & Dining,Dinner,Seafood Dinner,245.00,Sarah,Credit Card,Mar 2026
+2026-03-17,Subscriptions,Music,Spotify Premium,17.00,Sarah,Credit Card,Mar 2026
+2026-03-18,Gifts & Donations,Donation,NGO Donation,100.00,Alex,Online Transfer,Mar 2026
+2026-03-19,Pet Care,Vet,Annual Cat Health Check,220.00,Sarah,Credit Card,Mar 2026
+2026-03-20,Transportation,Toll,Touch n Go Reload,100.00,Alex,E-Wallet,Mar 2026
+2026-03-21,Food & Dining,Groceries,Mid-month Groceries,188.90,Sarah,E-Wallet,Mar 2026
+2026-03-22,Shopping & Clothing,Accessories,Watch Battery & Strap,85.00,Alex,Cash,Mar 2026
+2026-03-23,Healthcare,Pharmacy,Vitamins Restock,75.00,Alex,Cash,Mar 2026
+2026-03-24,Entertainment,Museum,Weekend Museum Visit,45.00,Sarah,E-Wallet,Mar 2026
+2026-03-25,Food & Dining,Breakfast,Breakfast Buffet at Hotel,120.00,Sarah,Credit Card,Mar 2026
+2026-03-26,Utilities,Water,Water Bill,35.00,Alex,Online Transfer,Mar 2026
+2026-03-27,Personal Care,Grooming,Haircut,50.00,Alex,Cash,Mar 2026
+2026-03-28,Travel,Road Trip,Road Trip to Cameron Highlands,680.00,Alex,Credit Card,Mar 2026
+2026-03-29,Food & Dining,Snacks,Afternoon Tea,55.00,Sarah,E-Wallet,Mar 2026
+2026-03-30,Home & Garden,Cleaning,Monthly Cleaning Service,200.00,Sarah,Online Transfer,Mar 2026
+2026-03-31,Food & Dining,Groceries,End of Month Groceries,175.20,Sarah,Credit Card,Mar 2026
